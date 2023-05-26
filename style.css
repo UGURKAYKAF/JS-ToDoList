@@ -1,0 +1,104 @@
+* {
+box-sizing: border-box;
+margin: 0;
+padding: 0;
+}
+
+body {
+font-family: Arial, sans-serif;
+background-color: #f1f1f1;
+}
+
+.container {
+max-width: 600px;
+margin: 0 auto;
+padding: 20px;
+background-color: #fff;
+border-radius: 5px;
+box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+text-align: center;
+margin-bottom: 20px;
+}
+
+form {
+display: flex;
+justify-content: space-between;
+margin-bottom: 20px;
+}
+
+input[type="text"] {
+flex: 1;
+padding: 10px;
+border: none;
+border-bottom: 2px solid #ccc;
+font-size: 16px;
+}
+
+input[type="time"] {
+flex: 1;
+padding: 10px;
+border: none;
+border-bottom: 2px solid #ccc;
+font-size: 16px;
+}
+
+button {
+padding: 10px 20px;
+background-color: #4caf50;
+color: #fff;
+border: none;
+border-radius: 5px;
+font-size: 16px;
+cursor: pointer;
+}
+
+button:hover {
+background-color: #357a38;
+}
+
+ul {
+list-style: none;
+margin-bottom: 20
+px;
+}
+
+li {
+display: flex;
+justify-content: space-between;
+align-items: center;
+padding: 10px;
+background-color: #f9f9f9;
+border-radius: 5px;
+margin-bottom: 10px;
+}
+
+li span {
+flex: 1;
+}
+
+li button {
+background-color: #f44336;
+color: #fff;
+border: none;
+border-radius: 5px;
+padding: 5px 10px;
+font-size: 16px;
+cursor: pointer;
+}  
+
+/* Responsive Stil */
+@media (max-width: 340px) {
+    form {
+        flex-direction: column;
+    }
+    input[type="text"] {
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+    button[type="button"] {
+        margin-top: 0;
+    }
+}
